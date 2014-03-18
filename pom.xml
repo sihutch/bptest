@@ -86,6 +86,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>buildnumber-maven-plugin</artifactId>
                 <version>1.2</version>
+                <inherited>false</inherited>
                 <executions>
                     <execution>
                         <phase>validate</phase>
