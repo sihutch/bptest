@@ -10,6 +10,12 @@
 
 	<artifactId>bptest-share</artifactId>
 	<packaging>jar</packaging>
+    
+    <scm>
+        <connection>scm:git:git@github.com:sihutch/bptest.git</connection>
+        <developerConnection>scm:git:git@github.com:sihutch/bptest.git</developerConnection>
+        <url>https://github.com/sihutch/bptest.git</url>
+    </scm>
 
 	<build>
 		<plugins>
