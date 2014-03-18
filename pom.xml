@@ -45,8 +45,8 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
-    <build> 
+
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -74,13 +74,13 @@
                     <generateBackupPoms>false</generateBackupPoms>
                 </configuration>
             </plugin>
-            
+
             <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.12.4</version>
-			</plugin>
-            
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.12.4</version>
+            </plugin>
+
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -98,6 +98,9 @@
                 <configuration>
                     <doCheck>true</doCheck>
                     <doUpdate>true</doUpdate>
+                    <items>
+                        <item>buildNumber</item>
+                    </items>
                 </configuration>
             </plugin>
 
@@ -117,10 +120,10 @@
                 </configuration>
             </plugin>
         </plugins>
-			
+
     </build>
-  <modules>
-    <module>bptest-alfresco</module>
-    <module>bptest-share</module>
-  </modules>
+    <modules>
+        <module>bptest-alfresco</module>
+        <module>bptest-share</module>
+    </modules>
 </project>
