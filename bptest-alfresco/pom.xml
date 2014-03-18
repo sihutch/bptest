@@ -10,7 +10,7 @@
 
     <artifactId>bptest-alfresco</artifactId>
     <packaging>jar</packaging>
-    
+
     <scm>
         <connection>scm:git:git@github.com:sihutch/bptest.git</connection>
         <developerConnection>scm:git:git@github.com:sihutch/bptest.git</developerConnection>
@@ -41,7 +41,21 @@
         </dependency>
     </dependencies>
 
-    <build>
+    
+
+    <profiles>
+        <profile>
+            <id>ci</id>
+            <build>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.properties</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -60,8 +74,7 @@
             </plugin>
         </plugins>
     </build>
-
-    <profiles>
+        </profile>
         <!--Profile which should be triggered when integration tests are desired -->
         <profile>
             <id>it</id>
