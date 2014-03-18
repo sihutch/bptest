@@ -86,6 +86,7 @@
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>buildnumber-maven-plugin</artifactId>
                 <version>1.2</version>
+                <inherited>false</inherited>
                 <executions>
                     <execution>
                         <phase>validate</phase>
@@ -110,7 +111,7 @@
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                         <manifestEntries>
-                            <Implementation-Build>${buildNumber}</Implementation-Build>
+                            <git-SHA-1>${buildNumber}</git-SHA-1>
                         </manifestEntries>
                     </archive>
                 </configuration>
