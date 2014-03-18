@@ -41,40 +41,9 @@
         </dependency>
     </dependencies>
 
-    
+
 
     <profiles>
-        <profile>
-            <id>ci</id>
-            <build>
-        <resources>
-            <resource>
-                <directory>${basedir}/src/main/resources</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>**/*.properties</include>
-                </includes>
-            </resource>
-        </resources>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.1</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        </manifest>
-                        <manifestEntries>
-                            <git-SHA-1>${buildNumber}</git-SHA-1>
-                        </manifestEntries>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-        </profile>
         <!--Profile which should be triggered when integration tests are desired -->
         <profile>
             <id>it</id>
