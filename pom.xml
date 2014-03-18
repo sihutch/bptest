@@ -17,9 +17,9 @@
     <url>https://wiki.ixxus.co.uk</url>
 
     <scm>
-        <connection>scm:git:git@github.com:ixxus/bptest.git</connection>
-        <developerConnection>scm:git:git@github.com:ixxus/bptest.git</developerConnection>
-        <url>https://github.com/ixxus/bptest.git</url>
+        <connection>scm:git:git@github.com:sihutch/bptest.git</connection>
+        <developerConnection>scm:git:git@github.com:sihutch/bptest.git</developerConnection>
+        <url>https://github.com/sihutch/bptest.git</url>
     </scm>
 
     <properties>
