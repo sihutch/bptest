@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.test</groupId>
 		<artifactId>bptest</artifactId>
-		<version>4.2.0.1.0-SNAPSHOT</version>
+		<version>1.0.54</version>
 	</parent>
 
 	<artifactId>bptest-share</artifactId>
