@@ -22,7 +22,7 @@
         <url>https://github.com/sihutch/bptest.git</url>
     </scm>
 
-    <properties
+    <properties>
         <alfresco.version>4.2.0</alfresco.version>
         <alfresco.classifier>enterprise</alfresco.classifier>
         <coverage.reports.dir>${basedir}/target/coverage-reports</coverage.reports.dir>
