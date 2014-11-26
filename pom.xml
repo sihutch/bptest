@@ -11,7 +11,7 @@
 
     <groupId>com.test</groupId>
     <artifactId>bptest</artifactId>
-    <version>1.5.0-SNAPSHOT</version>
+    <version>1.5.0.40</version>
 
     <packaging>pom</packaging>
     <url>https://wiki.ixxus.co.uk</url>
